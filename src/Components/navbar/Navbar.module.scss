@@ -1,0 +1,69 @@
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        display: flex;
+        justify-content: space-between;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style-type: none;
+            width: 50%;
+        }
+    }
+
+}
+
+/* ----------- Ipad Screens ----------- */
+@media (min-width: 768px) 
+  and (max-width: 1199px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .navbar {
+        div {
+            width: 90%;
+            ul {
+                width: 80%;
+            }
+        }
+    }
+}
+
+/* ----------- Laptop Screens ----------- */
+@media (min-width: 1200px) 
+  and (max-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .navbar {
+        div {
+            width: 80%;
+        }
+    }
+}
+
+/* ----------- Bigger Screens ----------- */
+@media (min-width: 1601px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .navbar {
+        div {
+            width: 1200px;
+        }
+    }
+}
+
+/* ----------- Phone Screens ----------- */
+@media (min-width: 300px) 
+  and (max-width: 767px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .navbar {
+        div {
+            width: 90%;
+        }
+        ul {
+            display: none !important;
+        }
+    }
+}

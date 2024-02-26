@@ -1,0 +1,29 @@
+.firstsection {
+    display: flex;
+    .leftside {
+        width: 50%;
+    }
+}
+
+.mediakititle {
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.socialmedia {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    div {
+        display: flex;
+        align-items: center;
+        :first-child {
+            margin-right: 5px;
+            margin-left: 10px;
+        }
+    }
+}
